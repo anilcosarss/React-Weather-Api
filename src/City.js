@@ -15,7 +15,7 @@ function City({ city }) {
                     </div>
 
                     <h1 className='text-2xl font-bold mb-2'>{city.weather[0].main}</h1>
-                    <img className='mx-auto' style={{
+                    <img className='mx-auto' alt='photos coming from API' style={{
                         color: "red",
                         backgroundColor: "rgba(120, 121, 120, 1)",
                         borderRadius: "20px"
