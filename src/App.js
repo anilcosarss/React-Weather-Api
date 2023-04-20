@@ -18,8 +18,8 @@ function App() {
         const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${key}&units=metric`)
         console.log(response) 
         setCity(response.data); 
-        {response.data.weather[0].main === 'Smoke' || response.data.weather[0].main === 'Clouds' || response.data.weather[0].main === 'Rain' ? setIsClear(true) : setIsClear(false)}
-        
+        setIsClear(response.data.weather[0].main === 'Smoke' || response.data.weather[0].main === 'Clouds' || response.data.weather[0].main === 'Rain');
+
     
       } catch(error){
         console.error(error) 
