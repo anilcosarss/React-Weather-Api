@@ -6,7 +6,7 @@ import City from './City';
 
 function App() {
   const key ="46a1fd8e5a459a6ffd9cb7a686d57d29";
-  const [search,setSearch] = useState("");
+  const [search,setSearch] = useState("istanbul");
   const [city,setCity] =useState();
   const [isClear,setIsClear] = useState(false)
   
