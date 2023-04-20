@@ -37,11 +37,12 @@ function App() {
       backgroundSize:"cover",
       boxShadow:`${isClear ? 'inset 10px 8px 140px 102px rgba(2,0,0,0.8)' : 'none' }`  ,
     }}>
-      <div className='pt-8 w-'>
+      <div className='pt-8'>
         <input  onChange={(e)=> setSearch(e.target.value)}
+        style={{width:"500px"}}
          placeholder='Type a city..'
          type='text'
-        className='px-3 w-72 py-3 placeholder-slate-300 text-slate-600 relative  rounded text-sm border border-slate-300 outline-none opacity-50 focus:opacity-100 focus:outline-none w-full' />
+        className='px-3 py-3 placeholder-slate-800 text-slate-600 relative  rounded text-sm border border-slate-300 outline-none opacity-50 focus:opacity-100 focus:outline-none' />
       </div>
       <City city={city}/>
        
