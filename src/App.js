@@ -35,7 +35,7 @@ function App() {
     <div className="App h-screen" style={{
       backgroundImage: "url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000)",
       backgroundSize:"cover",
-      boxShadow:`${isClear && 'inset 10px 8px 140px 102px rgba(2,0,0,0.8)' || 'none' }`  ,
+      boxShadow:`${isClear ? 'inset 10px 8px 140px 102px rgba(2,0,0,0.8)' : 'none' }`  ,
     }}>
       <div className='pt-8'>
         <input  onChange={(e)=> setSearch(e.target.value)}
